@@ -11,11 +11,17 @@ Using Terraform, create a script that provisions an EC2 instance on AWS.
 - Configure an SSH key pair to access the instance. ✅
 
 ## Commands:
-
 - aws configure
 - terraform init
 - terraform plan
 - terraform apply
 - terraform output -raw simple_ec2_private_key > simple-ec2-key.pem
+Use EIP or Bastion to SSH
 - ssh -i "simple-ec2-key.pem" ec2-user@ec2-my-best-public-dns.compute-1.amazonaws.com
 - terraform destroy
+
+## References:
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ssm_parameter
+- https://registry.terraform.io/providers/hashicorp/tls/latest/docs
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair
