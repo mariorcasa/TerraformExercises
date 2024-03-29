@@ -16,7 +16,7 @@ Using Terraform, create a script that provisions an EC2 instance on AWS.
 - terraform plan
 - terraform apply
 - terraform output -raw simple_ec2_private_key > simple-ec2-key.pem
-Use EIP or Bastion to SSH
+- (Use EIP or Bastion to SSH)
 - ssh -i "simple-ec2-key.pem" ec2-user@ec2-my-best-public-dns.compute-1.amazonaws.com
 - terraform destroy
 

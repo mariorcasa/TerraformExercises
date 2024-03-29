@@ -15,13 +15,13 @@ Using Terraform, create a script that configures an Application Load Balancer (A
 - terraform init
 - terraform plan
 - terraform apply
-Wait some minutes after to apply, can take 10 minutes, is necessary run userdata.tpl and that is AWS process, to validate, use EIP to connect or see health checks in the target group
+- (Wait some minutes after to apply, can take 10 minutes, is necessary run userdata.tpl and that is AWS process, to validate, use EIP to connect or see health checks in the target group)
 - terraform output -raw ec2_nginx_private_key > ec2_nginx_private_key.pem
 - ssh -i "ec2_nginx_private_key.pem" ec2-user@ec2-my-best-public-dns.compute-1.amazonaws.com
 - terraform destroy
 
 ## References:
-# Network
+### Network
 - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc
 - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/internet_gateway
 - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route
@@ -33,7 +33,7 @@ Wait some minutes after to apply, can take 10 minutes, is necessary run userdata
 - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener
 - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group_attachment
 
-# EC2
+### EC2
 - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ssm_parameter
 - https://registry.terraform.io/providers/hashicorp/tls/latest/docs
 - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
