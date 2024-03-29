@@ -12,8 +12,8 @@ Using Terraform, create a script that provisions an EC2 instance on AWS.
 
 ## Commands:
 
-- AWS Configure
-- Terraform init
+- aws configure
+- terraform init
 - terraform plan
 - terraform apply
 - terraform output -raw simple_ec2_private_key > simple-ec2-key.pem
