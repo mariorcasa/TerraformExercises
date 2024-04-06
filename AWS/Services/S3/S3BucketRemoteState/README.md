@@ -15,7 +15,7 @@ Using Terraform, create a script that configures an S3 storage bucket on AWS to 
 - aws dynamodb create-table --table-name remote-state-lock --attribute-definitions AttributeName=LockID,AttributeType=S --key-schema AttributeName=LockID,KeyType=HASH --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 --billing-mode PROVISIONED
 - terraform init
 - terraform plan 
-- terraform force-unlock <ID retorned in the last command in Lock Info>
+- terraform force-unlock 018eb5ac-5168-7ab6-acc0-d97f42c4d422 (ID retorned in previous command in Lock Info)
 - terraform plan
 - terraform apply
 - (Validate AWS S3 terraform created in the s3api command, file in: state/terraform.tfstate)
