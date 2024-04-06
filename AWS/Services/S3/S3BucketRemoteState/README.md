@@ -8,6 +8,7 @@ Using Terraform, create a script that configures an S3 storage bucket on AWS to 
 - Configure a policy block to restrict access to the bucket. ✅
 - Assign a tag to the bucket. ✅
 - Use the configured S3 bucket to store the Terraform state remotely. ✅
+- Implement versioning for the S3 bucket to manage different versions of the Terraform state. ✅
 
 ## Commands:
 - aws configure
