@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         	   = "terraform-example-test-1"
-    key              	   = "state/terraform.tfstate"
-    region         	   = "us-east-1"
-    encrypt        	   = true
+    bucket         = "terraform-example-test-1"
+    key            = "state/terraform.tfstate"
+    region         = "us-east-1"
+    encrypt        = true
     dynamodb_table = "remote-state-lock"
   }
 }
