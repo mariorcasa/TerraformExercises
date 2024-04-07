@@ -1,3 +1,6 @@
 [submodule "AWS/EnterpriseSolutions/MicroservicesArchitectureWithECS/AWSSQSNodeReceiver"]
 	path = AWS/EnterpriseSolutions/MicroservicesArchitectureWithECS/AWSSQSNodeReceiver
 	url = https://github.com/mariorcasa/AWSSQSNodeReceiver
+[submodule "AWS/EnterpriseSolutions/MicroservicesArchitectureWithECS/AWSSQSNodeSender"]
+	path = AWS/EnterpriseSolutions/MicroservicesArchitectureWithECS/AWSSQSNodeSender
+	url = https://github.com/mariorcasa/AWSSQSNodeSender
