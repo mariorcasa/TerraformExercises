@@ -4,7 +4,7 @@
 Using Terraform, create a script that implements a microservices architecture in AWS ECS (Elastic Container Service).
 
 ### Requirements:
-- Define two microservices that allow intercomunication from messages using AWS SNS (Decouple) ✅
+- Define two microservices that allow intercomunication from messages using AWS SQS (Decouple) ✅
 - Define an ECS container cluster with multiple services.
 - Configure a Network Load Balancer to distribute traffic among containers.
 - Utilize AWS Fargate to manage container infrastructure without provisioning EC2 instances.
