@@ -36,3 +36,6 @@ terraform.rc
 
 # Ignore credentials
 *.pem
+
+# Ignore default .env
+.env

@@ -1,0 +1,13 @@
+services:
+  aws-sqs-node-receiver:
+    build: ./AWSSQSNodeReceiver
+    env_file:
+      - .env
+  aws-sqs-node-sender:
+    build: ./AWSSQSNodeSender
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+
+    
